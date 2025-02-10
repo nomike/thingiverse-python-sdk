@@ -438,6 +438,4 @@ Authentication schemes defined for the API:
 
 ## Author
 
-
-
-
+nomike <nomike[AT]nomike[DOT]com>
