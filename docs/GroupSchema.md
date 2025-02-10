@@ -1,0 +1,43 @@
+# GroupSchema
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **int** |  | 
+**name** | **str** |  | [optional] 
+**slug** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
+**public_url** | **str** |  | [optional] 
+**url** | **str** |  | [optional] 
+**image** | **str** |  | [optional] 
+**creator** | **int** |  | [optional] 
+**is_member** | **bool** |  | [optional] 
+**members** | [**GroupMembers**](GroupMembers.md) |  | [optional] 
+**things** | [**GroupMembers**](GroupMembers.md) |  | [optional] 
+**group_topics** | [**GroupMembers**](GroupMembers.md) |  | [optional] 
+**featured** | [**List[GroupFeaturedInner]**](GroupFeaturedInner.md) |  | [optional] 
+**featured_images** | [**List[GroupFeaturedImagesInner]**](GroupFeaturedImagesInner.md) |  | [optional] 
+**pinned_topics** | **int** |  | [optional] 
+
+## Example
+
+```python
+from openapi_client.models.group_schema import GroupSchema
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of GroupSchema from a JSON string
+group_schema_instance = GroupSchema.from_json(json)
+# print the JSON string representation of the object
+print(GroupSchema.to_json())
+
+# convert the object into a dict
+group_schema_dict = group_schema_instance.to_dict()
+# create an instance of GroupSchema from a dict
+group_schema_from_dict = GroupSchema.from_dict(group_schema_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
